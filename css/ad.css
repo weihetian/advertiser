@@ -1,0 +1,76 @@
+media="all"
+.dash-sep#dash-sep-1 {
+    position: relative;
+    margin-top: -130px;
+    margin-bottom: -40px;
+}
+media="all"
+.dash-sep {
+    width: 90%;
+    height: 220px;
+    background: url('https://s3.amazonaws.com/roadie-cdn/wp-other/backgrounds/dash-horz.png') left top repeat-x;
+    background: url('https://s3.amazonaws.com/roadie-cdn/wp-other/backgrounds/dash-horz.png') left top repeat-x;
+    background-image: url("https://s3.amazonaws.com/roadie-cdn/wp-other/backgrounds/dash-horz.png");
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: initial;
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  media="all"
+#choose-a-roadie .dash {
+    position: absolute;
+    right: 5%;
+    top: 40px;
+    bottom: 0;
+    width: 2px;
+    background: url('https://s3.amazonaws.com/roadie-cdn/wp-other/backgrounds/dash-vert.png') left top repeat-y;
+    background-image: url("https://s3.amazonaws.com/roadie-cdn/wp-other/backgrounds/dash-vert.png");
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    margin-right: 0;
+}
+
+
+.dash {
+    display: block;
+}
+#choose-a-roadie .dash .icon-dot {
+    position: absolute;
+    top: -6%;
+    left: -13px;
+  }
+media="all"
+.dash .icon-dot {
+    color: #3351EE;
+    font-size: 26px;
+    font-size: 2.6rem;
+    line-height: 26px;
+    line-height: 2.6rem;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
