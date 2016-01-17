@@ -1,13 +1,13 @@
 html {
     width: 100%;
     height: 100%;
-	
+
 }
 
 body {
     width: 100%;
     height: 100%;
-   
+
 }
 
 
@@ -19,15 +19,14 @@ div{
 .fp
 {
 	position:relative;
-	
+
 	width:100%;
-	
+
 }
 
 .inner
 {
 	position:relative;
-	background-color:white;
 	min-height:500px;
 	margin:0px 50px;
 }
@@ -36,9 +35,9 @@ div{
 {
 	width:2px;
 	height:100%;
-	
-    background: url('../img/dash-vert.png') left top repeat-y;
-    background-image: url("../img/dash-vert.png");
+
+    background: url('../img/dash-vert_2.png') left top repeat-y;
+    background-image: url("../img/dash-vert_2.png");
     background-position-x: 0%;
     background-position-y: 0%;
     background-size: initial;
@@ -48,7 +47,7 @@ div{
     background-origin: initial;
     background-clip: initial;
     background-color: initial;
-	
+
 }
 
 .dash_h
@@ -101,6 +100,38 @@ div{
 	z-index:2;
 }
 
+.dash_left_down
+{
+	width:100px;
+	height:220px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100px;
+	height: 220px;
+	background-image: url('../img/dash-b2l.png');
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	z-index:2;
+}
+
+.dash_right_down
+{
+	width:100px;
+	height:220px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100px;
+	height: 220px;
+	background-image: url('../img/dash-r2b.png');
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	z-index:2;
+}
+
 .left
 {
 	position:absolute;
@@ -119,5 +150,177 @@ div{
 {
 	position:relative;
 	margin:0px 50px;
-	
+
+}
+
+.landing_page{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: url('https://s3.amazonaws.com/roadie-cdn/wp-other/backgrounds/mosaic.jpg') left top repeat;
+background-attachment: fixed;
+color: #fff;
+position: relative;
+overflow: hidden;
+}
+
+.landing_page_background_noise{
+  width: 100%;
+  height: 100%;
+  background:url('https://s3.amazonaws.com/roadie-cdn/wp-other/backgrounds/noise.png') left top repeat;
+    background-attachment: fixed;
+}
+
+.landing_page .landing_page_background_middlelayer{
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center,rgba(0,0,0,0) 0,rgba(0,0,0,1) 100%);
+}
+
+.landing_page .header{
+  width: 100%;
+  height: 600px;
+
+  line-height: 600px;
+}
+
+
+.second_page{
+  background-color:#ecf0f1;
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+  text-align: center;
+
+}
+
+.second_page .header{
+  margin: 100px 0px;
+}
+
+.second_page .header p{
+  font-size: 25px;
+}
+
+.second_page .header h1{
+  font-size: 50px;
+}
+
+.second_page .cars_image{
+  width: 100%;
+}
+
+.second_page .cars_image img{
+  width: 100%;
+}
+
+.second_page .content{
+  padding:50px 120px;
+  font-size: 18px;
+}
+
+.third_page{
+
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+  background:url('../img/brands.jpg') no-repeat center center ;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   text-align: center;
+}
+
+.third_page .header h1{
+  line-height: 600px;
+  font-size: 45px;
+  height: 600px;
+}
+
+
+.story_line_area{
+}
+
+
+.page-4{
+  position: relative;
+}
+.page-4 .story_content{
+  padding:20px;
+}
+
+.page-4 .story_content_text{
+  width: 40%;
+  display: inline-block;
+  position: relative;
+    height: 400px;
+}
+
+.page-4 .story_content_image{
+  width: 80%;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    height: 500px;
+    overflow: visible;
+    text-align: center;
+}
+
+.story_content_image img{
+  width: 100%;
+  display: inline-block;
+}
+
+.page-5{
+  width: 100%;
+  position: relative;
+  background:url('../img/full.jpg') no-repeat center center ;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.page-5 .story_content{
+  padding:50px;
+
+}
+
+.page-5 .story_content_text{
+  width: 40%;
+  display: inline-block;
+  right: 50px;
+  position: absolute;
+  color:white;
+    height: 400px;
+}
+
+.page-6{
+  position: relative;
+}
+.page-6 .story_content{
+  padding:20px;
+}
+
+.page-6 .story_content_text{
+  width: 40%;
+  display: inline-block;
+  position: relative;
+    height: 400px;
+}
+
+.page-6 .story_content_image{
+  width: 50%;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    height: 500px;
+    overflow: visible;
+    text-align: center;
+}
+
+.story_content_image img{
+  width: 100%;
+  display: inline-block;
 }
