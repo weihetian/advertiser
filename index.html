@@ -22,15 +22,18 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+  <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+
+  <!-- plus a jQuery UI theme, here I use "flick" -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
 
 
       <link rel="stylesheet" href='css/topbar.css'>
 
+      	<link rel="stylesheet" href="css/jquery-ui-slider-pips.css">
+
+	<link rel="stylesheet" href="css/slider_bar.css">
   	<link rel="stylesheet" href="css/_main.css">
-
-	<script src='js/_main.js'></script>
-
-
 
 </head>
 <body>
@@ -40,8 +43,10 @@
       <div class='carvertise_logo_top'>CARVERTISE
       </div>
       <div class='tabs_top'>
-      	<a class='single_tab' href="javascript:void(0)">driver</a>
-      	<a class='single_tab' href="javascript:void(0)">advertiser</a>
+      	<a class='single_tab' href="../driver">driver</a>
+      	<a class='single_tab' href="../advertiser">advertiser</a>
+        <a class='single_tab' href="../gallery">gallery</a>
+        <a class='single_tab' href="../case_study">case study</a>
       	<a class='single_tab' href="javascript:void(0)">press</a>
       	<a class='single_tab' href="javascript:void(0)">FAQ</a>
       </div>
@@ -68,7 +73,7 @@
       <h1>CAR ADVERTISING</h1>
     </div>
     <div class='cars_image'>
-      <img src='img/carline.jpg'>
+      <img src='img/carline.gif'>
     </div>
     <div class='content'>
       <p>By using high-mileage car drivers to carry your brand, OOH car advertising allows you to weave
@@ -97,7 +102,7 @@
 
       <div class='story_content'>
         <div class='story_content_text'>
-          <p>Each Day hundreds of drivers from around the nation register with our program. They
+          <p><b>Each Day</b> hundreds of drivers from around the nation register with our program. They
           are everyday car owners who want to earn a little extra every month for driving with an ad on
           their car. In essence, riding with an brand they support and having their commute pay for itself.
           Each registered drive gives to Carvertise their driving data and car information.
@@ -132,7 +137,8 @@
 
       <div class='story_content'>
         <div class='story_content_text'>
-          <p>Assembling a Campaign<br>
+          <h1>Assembling a Campaign</h1>
+          <p>
             We start by understanding the specific geographics where our clients need exposure. This can be as large as obtaining a high GRP rating
             in multiple DMAs, or, as specific as covering a section of a particular city. Using our patent-pending matching algorithm, we then pair our partnering brand with the Carvertisers
             who drive in the areas of interest
@@ -169,7 +175,8 @@
 
       <div class='story_content'>
         <div class='story_content_text'>
-          <p>Quality control</br>
+          <h1>Quality control</h1>
+          <p>
             Befroe any cars are wrapped, Carvertise runs all matched drivers through the following quality checks.Our strict standards and significant time investment to this process ensure the
              highest degree of brand image control
           </p>
@@ -202,8 +209,29 @@
       </div>
 
       <div class='story_content'>
+        <div class='story_content_campaignoptions_wrapper'>
+          <div class='story_content_campaignoptions'>
+            <div class='story_content_campaignoptions_optionbar'>
+              <div id="double-label-slider"></div>
+            </div>
+            <div class='story_content_campaignoptions_header'>
+              <h3>King
+            </div>
+            <div class='story_content_campaignoptions_image'>
+
+            <img src='http://www.infiniti.eu/wp-content/uploads/2013/10/offers-QX70-profile-1.png'>
+            </div>
+
+            <div class='story_content_campaignoptions_discription'>
+              <p>All material is A-grade 3M Decal material, that has a 12-24 month duration.Decal material is applied and later taken off by
+              our inhouse professionals. As a full serivice feature, Carvertise has the ability to create the garphic design if preffered by client.
+            </p>
+            </div>
+          </div>
+        </div>
         <div class='story_content_text'>
-          <p>Selecting Creative<br>
+          <h1>Selecting Creative</h1>
+          <p>
             All material is A-grade 3M Decal material, that has a 12-24 month duration.Decal material is applied and later taken off by
             our inhouse professionals. As a full serivice feature, Carvertise has the ability to create the garphic design if preffered by client.
           </p>
@@ -288,8 +316,11 @@
 
 </div>
   <script src='js/topbar.js'></script>
+    <script src='js/jquery-ui-slider-pips.js'></script>
 
-  
+  <script src='js/_main.js'></script>
+
+
 </body>
 
 </html>
