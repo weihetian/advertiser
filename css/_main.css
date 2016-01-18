@@ -397,7 +397,6 @@ background-size: 3px 3px;*/
 }
 .page-7 .story_content_campaignoptions img{
 width: 100%;
-display: inline-block;
 }
 
 .page-7  .story_content_campaignoptions_discription{
@@ -433,6 +432,7 @@ display: inline-block;
     text-align: center;
 }
 
+
 .story_content_image img{
   width: 100%;
   display: inline-block;
@@ -441,4 +441,21 @@ display: inline-block;
   padding:20px;
   width: 80%;
   display: inline-block;
+}
+
+
+.campaignoptions_header-1{
+  display: none;
+}
+
+.campaignoptions_header-3{
+  display: none;
+}
+
+.story_content_campaignoptions_image-1{
+  display: none;
+}
+
+.story_content_campaignoptions_image-3{
+  display: none;
 }
