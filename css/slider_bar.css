@@ -1,4 +1,7 @@
 
+#double-label-slider.ui-slider .ui-slider-handle:focus {
+    outline: none;
+}
 #double-label-slider.ui-slider {
   margin-top: 24px;
   height: 6px;
