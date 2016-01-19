@@ -459,3 +459,73 @@ width: 100%;
 .story_content_campaignoptions_image-3{
   display: none;
 }
+
+
+.page-8{
+  position: relative;
+	height: 600px;
+}
+.page-8 .story_content{
+  padding:20px;
+}
+
+.page-8 .story_content_text{
+  width: 40%;
+}
+
+
+.page-8 .story_content_text h1{
+  font-weight: bold;
+}
+
+.page-8 .story_content_text p{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 200;
+}
+
+.page-8 .story_content_image{
+  width: 50%;
+    position: absolute;
+    top:0px;
+    right: 5%;
+    height: 500px;
+    overflow: visible;
+    text-align: center;
+}
+
+
+.page-9{
+  position: relative;
+	height: 600px;
+}
+.page-9 .story_content{
+  padding:20px;
+}
+
+.page-8 .story_content_text{
+  width: 35%;
+	position: relative;
+	float: left;
+}
+
+
+.page-9 .story_content_text h1{
+  font-weight: bold;
+}
+
+.page-9 .story_content_text p{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 200;
+}
+
+.page-9 .story_content_image{
+  width: 60%;
+    position: relative;
+		float: left;
+  	left:-100px;
+    height: 500px;
+    overflow: visible;
+    text-align: center;
+}
