@@ -304,26 +304,134 @@ background-size: 3px 3px;*/
     z-index: 2;
 }
 
-.story_content_image img{
+
+
+
+/*ipad css is here*/
+.ipad_image{
   width: 100%;
   display: inline-block;
   z-index: 2;
 }
 
+
+.ipad_animation{
+	position: relative;
+	  z-index: 2;
+}
+
+.pin{
+	position: absolute;
+	width: 20px;
+	cursor: pointer;
+	z-index: 5;
+}
+
+.pin_image img{
+	position: relative;
+	top:0px;
+	transition: all 0.3s ease-in-out;
+	width: 100%;
+
+}
+
+.pin:hover .pin_image img{
+
+	top:-5px;
+}
+
+.pin:hover .pin_info{
+	opacity: 1;
+	top:-120px;
+}
+
+.pin_info{
+	  transition: opacity 0.3s;
+	transition: all 0.3s ease-in-out;
+	position: absolute;
+	width: 100px;
+	opacity: 0;
+	border-radius: 50%;
+	  box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+	top:-100px;
+	left: -40px;
+
+}
+
+.pin_info_img{
+	width: 100%;
+}
+
+.pin_info p{
+	text-align: left;
+}
+
+.pin-1{
+	top:250px;
+	left:400px;
+}
+
+.pin-2{
+	top:290px;
+	left:290px;
+}
+
+.pin-3{
+	top:280px;
+	left:450px;
+}
+
+.gps_ring {
+	z-index: -1;
+    border: 3px solid #1abc9c;
+    -webkit-border-radius: 50%;
+    height: 15px;
+    width: 20px;
+    position: relative;
+		top:-8px;
+    bottom:0px;
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.0
+}
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+
+/*ipad ends here*/
+
+
 .page-5{
   width: 100%;
   position: relative;
-  background:url('../img/full.jpg') no-repeat center center ;
+  /*background:url('../img/full.jpg') no-repeat center center ;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
-   background-size: cover;
+   background-size: cover;*/
 }
 
 .page-5 .story_content{
   padding:50px 100px;
 
-  height: 600px;
+  height: 650px;
+}
+
+.page-5 .story_content_image{
+  width: 80%;
+    position: absolute;
+    top:0px;
+    left: -20%;
+    height: 500px;
+    overflow: visible;
+    text-align: center;
+}
+
+.page-5 .story_content_image img{
+	width: 100%;
 }
 
 .page-5 .story_content_text{
@@ -331,7 +439,7 @@ background-size: 3px 3px;*/
   display: inline-block;
   right: 30px;
   position: absolute;
-  color:white;
+  /*color:white;*/
 }
 
 .page-5 .story_content_text h1{
@@ -343,6 +451,39 @@ background-size: 3px 3px;*/
   line-height: 30px;
   font-weight: 200;
 }
+
+/*assembling here*/
+.ipad_map_assembling{
+	position: relative;
+}
+
+
+.assembling_circle{
+	cursor: pointer;
+	position: absolute;
+	top:100px;
+	right: 200px;
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	background-color: rgba(26, 188, 156,0.2);
+	border:2px solid #1abc9c;
+}
+
+.assembling_pin{
+	opacity: 0;
+	position: absolute;
+	width: 20px;
+}
+
+.assembling_pins{
+	position: absolute;
+}
+
+.assembling_pin img{
+	width: 100%;
+}
+/*assembling end*/
 
 .page-6{
   position: relative;
@@ -433,7 +574,7 @@ width: 100%;
 }
 
 
-.story_content_image img{
+.page-6 .story_content_image img{
   width: 100%;
   display: inline-block;
 }
@@ -463,10 +604,17 @@ width: 100%;
 
 .page-8{
   position: relative;
-	height: 600px;
+
+	background:url('../img/full_2.jpg') no-repeat center center ;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover;
 }
 .page-8 .story_content{
   padding:20px;
+	color:white;
+	height: 600px;
 }
 
 .page-8 .story_content_text{
@@ -497,10 +645,10 @@ width: 100%;
 
 .page-9{
   position: relative;
-	height: 600px;
+	height: 800px;
 }
 .page-9 .story_content{
-  padding:20px;
+  padding:0px 20px;
 }
 
 .page-8 .story_content_text{
@@ -521,11 +669,55 @@ width: 100%;
 }
 
 .page-9 .story_content_image{
-  width: 60%;
+  	width: 60%;
     position: relative;
 		float: left;
-  	left:-100px;
     height: 500px;
     overflow: visible;
     text-align: center;
+}
+
+/*.page-9 .story_content_image img{
+	width: 100%;
+}*/
+
+.map_layer{
+	top:50px;
+	overflow: visible;
+	width:100%;
+	  height: 500px;
+	position:relative;
+}
+
+.single_layer{
+
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	left:0px;
+	top:0px;
+	width:80%;
+	position: absolute;
+}
+
+.single_layer:hover{
+	top:-50px;
+}
+
+.single_layer img{
+	width: 100%;
+}
+
+.layer-1{
+	top:-20px;
+	left: -80px;
+}
+
+.layer-2{
+	left:0px;
+	top:0px;
+}
+
+.layer-3{
+	top:20px;
+	left: 80px;
 }
