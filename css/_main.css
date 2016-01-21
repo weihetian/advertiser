@@ -455,6 +455,7 @@ background-size: 3px 3px;*/
 /*assembling here*/
 .ipad_map_assembling{
 	cursor: pointer;
+	overflow: hidden;
 	position: relative;
 }
 
