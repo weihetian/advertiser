@@ -454,9 +454,30 @@ background-size: 3px 3px;*/
 
 /*assembling here*/
 .ipad_map_assembling{
+	cursor: pointer;
 	position: relative;
 }
 
+
+.select_circle {
+	display: none;
+	position: absolute;
+	top:100px;
+	left: 300px;
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	background-color: rgba(26, 188, 156,0.2);
+	border:2px solid #1abc9c;
+    -webkit-animation: expandcircle 1.3s ease;
+    -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes expandcircle {
+    0% {-webkit-transform: scale(0.1, 0.1);}
+
+
+		100% {-webkit-transform: scale(1.0, 1.0);}
+}
 
 .assembling_circle{
 	cursor: pointer;
@@ -468,6 +489,7 @@ background-size: 3px 3px;*/
 	border-radius: 50%;
 	background-color: rgba(26, 188, 156,0.2);
 	border:2px solid #1abc9c;
+	display: none;
 }
 
 .assembling_pin{
