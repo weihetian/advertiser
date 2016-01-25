@@ -328,6 +328,12 @@ background-size: 3px 3px;*/
   font-weight: 200;
 }
 
+@media (max-width:480px) {
+	.page-4 .story_content_text{
+		width: 100%;
+	}
+}
+
 .page-4 .story_content_image{
   width: 1000px;
     position: absolute;
@@ -338,6 +344,14 @@ background-size: 3px 3px;*/
     text-align: center;
 
     z-index: 2;
+}
+
+@media (max-width:480px) {
+.page-4 .story_content_image{
+		left: -300px;
+		width: 1000px;
+    position: relative;
+}
 }
 
 
@@ -452,18 +466,38 @@ background-size: 3px 3px;*/
 
 .page-5 .story_content{
   padding:50px 100px;
-
+	position: relative;
   height: 650px;
 }
 
+@media (max-width:480px) {
+	.page-5 .story_content{
+	  padding:30px 0px;
+	}
+
+
+}
+
+
+
 .page-5 .story_content_image{
-  width: 80%;
+  width: 800px;
     position: absolute;
     top:0px;
     left: -20%;
     height: 500px;
     overflow: visible;
     text-align: center;
+}
+
+@media (max-width:480px) {
+	.page-5 .story_content_image{
+		  width: 600px;
+	  	position: relative;
+		  top:0px;
+			left:-300px;
+			min-height: 500px;
+	}
 }
 
 .page-5 .story_content_image img{
@@ -476,6 +510,14 @@ background-size: 3px 3px;*/
   right: 30px;
   position: absolute;
   /*color:white;*/
+}
+
+@media (max-width:480px) {
+	.page-5 .story_content_text{
+	  width: 100%;
+		left: 0px;
+		position: relative;
+	}
 }
 
 .page-5 .story_content_text h1{
@@ -516,6 +558,14 @@ background-size: 3px 3px;*/
 		100% {-webkit-transform: scale(1.0, 1.0);}
 }
 
+@media (max-width:480px) {
+	.select_circle{
+		width: 200px;
+		height: 200px;
+
+	}
+}
+
 .assembling_circle{
 	cursor: pointer;
 	position: absolute;
@@ -528,6 +578,9 @@ background-size: 3px 3px;*/
 	border:2px solid #1abc9c;
 	display: none;
 }
+
+
+
 
 .assembling_pin{
 	opacity: 0;
@@ -551,8 +604,21 @@ background-size: 3px 3px;*/
   padding:20px;
 }
 
+@media (max-width: 480px) {
+	.page-6 .story_content{
+	  padding:10px;
+	}
+}
+
 .page-6 .story_content_text{
   width: 40%;
+}
+
+
+@media (max-width: 480px) {
+	.page-6 .story_content_text{
+	  width: 100%;
+	}
 }
 
 
@@ -566,61 +632,6 @@ background-size: 3px 3px;*/
   font-weight: 200;
 }
 
-.page-6 .story_content_image{
-  width: 50%;
-    position: absolute;
-    top:0px;
-    right: 0px;
-    height: 500px;
-    overflow: visible;
-    text-align: center;
-}
-
-.page-7 {
-  position: relative;
-}
-.page-7 .story_content{
-  padding:20px;
-}
-
-.page-7 .story_content_campaignoptions_wrapper{
-  width: 50%;
-  height: 600px;
-  position:relative;
-  float: left;
-  text-align: center;
-}
-
-.page-7 .story_content_campaignoptions{
-  position: relative;
-  width: 100%;
-}
-.page-7 .story_content_campaignoptions img{
-width: 100%;
-}
-
-.page-7  .story_content_campaignoptions_discription{
-  padding: 0px 80px;
-  line-height: 25px;
-}
-
-.page-7 .story_content_text{
-  width: 50%;
-  padding: 0px 50px;
-  position:relative;
-  float: left;
-}
-
-
-.page-7 .story_content_text h1{
-  font-weight: bold;
-}
-
-.page-7 .story_content_text p{
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 200;
-}
 
 .page-6 .story_content_image{
   width: 50%;
@@ -637,6 +648,85 @@ width: 100%;
   width: 100%;
   display: inline-block;
 }
+
+@media (max-width: 480px) {
+	.page-6 .story_content_image{
+	  width: 100%;
+		margin:50px 0px;
+	    position: relative;
+			height: 200px;
+	}
+
+}
+
+.page-7 {
+  position: relative;
+}
+.page-7 .story_content{
+  padding:20px;
+	overflow: hidden;
+}
+
+.page-7 .story_content_campaignoptions_wrapper{
+  width: 50%;
+  height: 600px;
+  position:relative;
+  float: left;
+  text-align: center;
+}
+
+@media (max-width:480px){
+	.page-7 .story_content_campaignoptions_wrapper{
+  width: 100%;
+	}
+}
+
+.page-7 .story_content_campaignoptions{
+  position: relative;
+  width: 100%;
+}
+.page-7 .story_content_campaignoptions img{
+width: 100%;
+}
+
+.page-7  .story_content_campaignoptions_discription{
+  padding: 0px 80px;
+  line-height: 25px;
+}
+
+@media (max-width:480px){
+	.page-7  .story_content_campaignoptions_discription{
+	  padding: 0px 20px;
+	  line-height: 25px;
+	}
+}
+
+.page-7 .story_content_text{
+  width: 50%;
+  padding: 0px 50px;
+  position:relative;
+  float: left;
+}
+
+
+@media (max-width:480px){
+.page-7 .story_content_text{
+width: 100%;
+padding: 0px 0px;
+}
+}
+
+
+.page-7 .story_content_text h1{
+  font-weight: bold;
+}
+
+.page-7 .story_content_text p{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 200;
+}
+
 .story_content_campaignoptions_optionbar{
   padding:20px;
   width: 80%;

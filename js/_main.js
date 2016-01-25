@@ -26,11 +26,13 @@ $(function() {
 
   $('.ipad_map_assembling').click(function(e) {
     cleanpin();
+
+    var width =  $('.select_circle').width()/2;
     $('.select_circle').hide();
     var offset = $(this).offset();
-    $('.select_circle').css({top:(e.pageY - offset.top-175), left: (e.pageX - offset.left-175)});
+    $('.select_circle').css({top:(e.pageY - offset.top-width), left: (e.pageX - offset.left-width)});
     $('.select_circle').show();
-    generatepin((e.pageX - offset.left-175),(e.pageY - offset.top-175));
+    generatepin((e.pageX - offset.left-width),(e.pageY - offset.top-width));
   })
 
 
@@ -61,13 +63,17 @@ $(function() {
    var circley = $(".select_circle").position().top;
    var circlex = $(".select_circle").position().left;
 
+     var width =  $('.select_circle').width();
+
+     var halfwidth = width/2;
+
    var num = Math.floor(Math.random() * 15) + 15;
    for(var i=0;i<20; i++){
-     var x=Math.floor(Math.random() * 350) + 1 ;
-     var y=Math.floor(Math.random() * 350) + 1 ;
-     var distance = Math.sqrt( (x-175)*(x-175) + (y-175)*(y-175));
+     var x=Math.floor(Math.random() * width) + 1 ;
+     var y=Math.floor(Math.random() * width) + 1 ;
+     var distance = Math.sqrt( (x-halfwidth)*(x-halfwidth) + (y-halfwidth)*(y-halfwidth));
 
-     if(distance < 170){
+     if(distance < (halfwidth-5)){
        console.log(distance);
        pins+="<div class='assembling_pin' style='position:absolute; top:"+(y-60+top)+"px;left:"+(x-10+left)+"px;'><img src='http://www.myiconfinder.com/uploads/iconsets/6096188ce806c80cf30dca727fe7c237.png'></div>";
      }
