@@ -911,6 +911,7 @@ padding: 0px 0px;
 }
 
 .linked_in{
+	position: relative;
 	overflow: hidden;
 	text-align: center;
 
@@ -920,6 +921,17 @@ background-attachment: fixed;
 	/*padding: 50px 0px;
 	background: #fff url(https://d1a3f4spazzrp4.cloudfront.net/web-fresh/pattern-grid@1x.jpg) repeat left top;
   background-size: 20px;*/
+}
+
+.linked_in::before {
+	border-color: white transparent transparent transparent;
+	 border-style: solid;
+	 border-width: 40px 50px 0px 50px;
+	 top: 0px;
+	 left:calc(50% - 50px);
+	 content: "";
+	 position: absolute;
+
 }
 
 .linked_in .header h1{
