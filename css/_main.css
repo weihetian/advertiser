@@ -90,6 +90,25 @@ body {
     position: relative;
 }
 
+.half_dash_h
+{
+	float: right;
+    width: 50%;
+    height: 220px;
+    background: url('../img/dash-horz.png') left top repeat-x;
+    background-image: url("../img/dash-horz.png");
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: initial;
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    position: relative;
+}
+
 .dash_left
 {
 	width:100px;
@@ -138,6 +157,23 @@ body {
 	z-index:2;
 }
 
+.dash_left_down_half
+{
+	width:100px;
+	height:220px;
+
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 100px;
+	height: 220px;
+	background-image: url('../img/dash-b2l.png');
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	z-index:2;
+}
+
 .dash_right_down
 {
 	width:100px;
@@ -170,6 +206,7 @@ body {
 
 .middle
 {
+	overflow: hidden;
 	position:relative;
 	margin:0px 100px;
 }
@@ -795,9 +832,11 @@ padding: 0px 0px;
 .page-9{
   position: relative;
 	height: 800px;
+
 }
 .page-9 .story_content{
   padding:0px 20px;
+		height: 800px;
 }
 
 .page-8 .story_content_text{
@@ -869,4 +908,11 @@ padding: 0px 0px;
 .layer-3{
 	top:20px;
 	left: 80px;
+}
+
+.linked_in{
+	text-align: center;
+	padding: 50px 0px;
+	background: #fff url(https://d1a3f4spazzrp4.cloudfront.net/web-fresh/pattern-grid@1x.jpg) repeat left top;
+  background-size: 20px;
 }
