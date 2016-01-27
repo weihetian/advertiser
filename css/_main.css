@@ -911,10 +911,12 @@ padding: 0px 0px;
 }
 
 .linked_in{
+	overflow: hidden;
 	text-align: center;
 
 	background: url('https://s3.amazonaws.com/roadie-cdn/wp-other/backgrounds/mosaic.jpg') left top repeat;
 background-attachment: fixed;
+
 	/*padding: 50px 0px;
 	background: #fff url(https://d1a3f4spazzrp4.cloudfront.net/web-fresh/pattern-grid@1x.jpg) repeat left top;
   background-size: 20px;*/
