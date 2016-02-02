@@ -1,3 +1,23 @@
+
+function mobile_menu(){
+  $('.mobile_nav_wrapper').show();
+  $('.mobile_nav').show();
+
+    $('.mobile_nav').transition({ y:10, opacity: 1 });
+
+
+}
+
+function mobile_menu_off(){
+
+    $('.mobile_nav').transition({ y:0, opacity: 0 },function(){
+
+        $('.mobile_nav').hide();
+        $('.mobile_nav_wrapper').hide();
+    });
+
+}
+
 var doubleLabels = [
 
     "<i>1</i><span>Queen</span>",
@@ -21,7 +41,7 @@ $("#double-label-slider")
 
 $(function() {
   $('.select_circle').show();
-  generatepin(300,100);
+  generatepin(300,135);
 });
 
   $('.ipad_map_assembling').click(function(e) {
@@ -30,7 +50,7 @@ $(function() {
     var width =  $('.select_circle').width()/2;
     $('.select_circle').hide();
     var offset = $(this).offset();
-    $('.select_circle').css({top:(e.pageY - offset.top-width), left: (e.pageX - offset.left-width)});
+    $('.select_circle').css({top:(e.pageY - offset.top-width-35), left: (e.pageX - offset.left-width-100)});
     $('.select_circle').show();
     generatepin((e.pageX - offset.left-width),(e.pageY - offset.top-width));
   })
@@ -57,6 +77,8 @@ $(function() {
 
  }
 
+
+
  function generatepin(left,top){
    var pins="";
 
@@ -75,7 +97,7 @@ $(function() {
 
      if(distance < (halfwidth-5)){
        console.log(distance);
-       pins+="<div class='assembling_pin' style='position:absolute; top:"+(y-60+top)+"px;left:"+(x-10+left)+"px;'><img src='http://www.myiconfinder.com/uploads/iconsets/6096188ce806c80cf30dca727fe7c237.png'></div>";
+       pins+="<div class='assembling_pin' style='position:absolute; top:"+(y-60+top-35)+"px;left:"+(x-10+left-100)+"px;'><img src='img/assembling_pin.png'></div>";
      }
 
    }
@@ -85,6 +107,49 @@ $(function() {
      $(this).transition({ opacity: 1, y:50,duration: duration, delay: 1300})});
 
  }
+
+ var endPos=2;
+
+function showfront(){
+  $('.story_content_campaignoptions_image-'+endPos+'').find('.story_content_campaignoptions_sides_button').removeClass('active_side');
+
+  $('.story_content_campaignoptions_image-'+endPos+'').find('.show_front').addClass('active_side');
+
+  $('.story_content_campaignoptions_image-'+endPos+'').find(".side").hide();
+
+  $('.story_content_campaignoptions_image-'+endPos+'').find(".back").hide();
+
+  $('.story_content_campaignoptions_image-'+endPos+'').find(".front").show();
+
+}
+
+function showside(){
+
+  $('.story_content_campaignoptions_image-'+endPos+'').find('.story_content_campaignoptions_sides_button').removeClass('active_side');
+
+  $('.story_content_campaignoptions_image-'+endPos+'').find('.show_side').addClass('active_side');
+
+  $('.story_content_campaignoptions_image-'+endPos+'').find(".front").hide();
+
+  $('.story_content_campaignoptions_image-'+endPos+'').find(".back").hide();
+
+  $('.story_content_campaignoptions_image-'+endPos+'').find(".side").show();
+
+}
+
+function showback(){
+
+  $('.story_content_campaignoptions_image-'+endPos+'').find('.story_content_campaignoptions_sides_button').removeClass('active_side');
+
+  $('.story_content_campaignoptions_image-'+endPos+'').find('.show_back').addClass('active_side');
+
+  $('.story_content_campaignoptions_image-'+endPos+'').find(".side").hide();
+
+  $('.story_content_campaignoptions_image-'+endPos+'').find(".front").hide();
+
+  $('.story_content_campaignoptions_image-'+endPos+'').find(".back").show();
+
+}
 
 var startPos = 2;
 

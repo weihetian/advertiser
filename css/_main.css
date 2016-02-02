@@ -21,7 +21,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-	font-family: 'Raleway', Arial, sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 
@@ -197,11 +197,25 @@ body {
 	top:0px;
 }
 
+.left img{
+	position: relative;
+	width: 30px;
+	left:-15px;
+	top:25px;
+}
+
 .right
 {
 	position:absolute;
 	right:0px;
 	top:0px;
+}
+
+.right img{
+	position: relative;
+	width: 30px;
+	right:15px;
+	top:25px;
 }
 
 .middle
@@ -224,12 +238,17 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  background: url('https://s3.amazonaws.com/roadie-cdn/wp-other/backgrounds/mosaic.jpg') left top repeat;
-background-attachment: fixed;
+  background: url('../img/Collage_NoCopy.jpg') no-repeat center center ;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 color: #fff;
 position: relative;
 overflow: hidden;
 }
+
+
 
 .landing_page_background_noise{
   width: 100%;
@@ -246,9 +265,31 @@ overflow: hidden;
 
 .landing_page .header{
   width: 100%;
-  height: 600px;
+	position: relative;
+	top:30%;
+}
 
-  line-height: 600px;
+.landing_page .header h1{
+	font-size: 90px;
+
+}
+
+.landing_page .header p{
+	font-size: 30px;
+	margin: 20px 0px;
+}
+
+@media (max-width: 480px) {
+
+	.landing_page .header{
+
+		top:35%;
+	}
+
+	.landing_page .header p{
+		font-size: 20px;
+		margin: 10px 0px;
+	}
 }
 
 
@@ -263,13 +304,14 @@ overflow: hidden;
   background: #fff url(https://d1a3f4spazzrp4.cloudfront.net/web-fresh/pattern-grid@1x.jpg) repeat left top;
   background-size: 20px;
   width: 100%;
-  min-height: 500px;
+  min-height: 400px;
+
   position: relative;
   text-align: center;
 }
 
 .second_page .header{
-  margin: 100px 0px;
+  padding: 100px 0px;
 }
 
 .second_page .header p{
@@ -277,21 +319,40 @@ overflow: hidden;
 }
 
 .second_page .header h1{
-  font-size: 50px;
+  font-size: 70px;
+	font-weight: lighter;
+	color: #629bb0;
 }
 
 .second_page .cars_image{
   width: 100%;
+	position: relative;
+	z-index: 5;
 }
 
 .second_page .cars_image img{
   width: 100%;
+
+}
+
+.second_page .halfblack{
+	height:25px;
+	background-color: rgba(131,133,134,0.3);
+	bottom:250px;
+	left: 0px;
+	width: 100%;
+	position: absolute;
 }
 
 .second_page .content{
-  padding:50px 250px;
+
+	position: relative;
+  padding:80px 250px;
   line-height: 25px;
-  color:rgba(149, 165, 166,1.0);
+	height: 250px;
+  color:#7d7d7d;
+	overflow: visible;
+	background-color: rgba(131,133,134,0.3);
   font-size: 15px;
 }
 
@@ -308,23 +369,25 @@ overflow: hidden;
 .third_page{
 
   width: 100%;
-
+		padding: 250px 0px;
   position: relative;
-  /*background:url('../img/brands.jpg') no-repeat center center ;
+  background:url('../img/brands.jpg') no-repeat center center ;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
-   background-size: cover;*/
+   background-size: cover;
    text-align: center;
 }
 
 .third_page .header{
 	width: 100%;
+
 }
 
 .third_page .header h1{
-  font-size: 45px;
-	margin: 200px 0px;
+  font-size: 50px;
+	color:#629bb0;
+	font-weight: lighter;
 }
 
 
@@ -358,17 +421,12 @@ background-size: 3px 3px;*/
   display: inline-block;
   position: relative;
   line-height: 30px;
-    height: 500px;
+    min-height: 500px;
     font-size: 20px;
   color: black;
   font-weight: 200;
 }
 
-@media (max-width:480px) {
-	.page-4 .story_content_text{
-		width: 100%;
-	}
-}
 
 .page-4 .story_content_image{
   width: 1000px;
@@ -382,13 +440,6 @@ background-size: 3px 3px;*/
     z-index: 2;
 }
 
-@media (max-width:480px) {
-.page-4 .story_content_image{
-		left: -300px;
-		width: 1000px;
-    position: relative;
-}
-}
 
 
 
@@ -408,12 +459,15 @@ background-size: 3px 3px;*/
 
 .pin{
 	position: absolute;
-	width: 20px;
+	width: 50px;
+	text-align: center;
 	cursor: pointer;
 	z-index: 5;
 }
 
 .pin_image img{
+	display: inline-block;
+
 	position: relative;
 	top:0px;
 	transition: all 0.3s ease-in-out;
@@ -435,31 +489,33 @@ background-size: 3px 3px;*/
 	  transition: opacity 0.3s;
 	transition: all 0.3s ease-in-out;
 	position: absolute;
-	width: 100px;
+	width: 150px;
 	opacity: 0;
 	border-radius: 50%;
 	  box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
 	top:-100px;
-	left: -40px;
+	left: -50px;
 
 }
 
 .pin_info_img{
 	width: 100%;
+	background-color: red;
 }
+
 
 .pin_info p{
 	text-align: left;
 }
 
 .pin-1{
-	top:250px;
-	left:400px;
+	top:230px;
+	left:320px;
 }
 
 .pin-2{
-	top:290px;
-	left:290px;
+	top:200px;
+	left:550px;
 }
 
 .pin-3{
@@ -472,10 +528,10 @@ background-size: 3px 3px;*/
     border: 3px solid #1abc9c;
     -webkit-border-radius: 50%;
     height: 15px;
-    width: 20px;
+    width: 40px;
     position: relative;
-		top:-8px;
-    bottom:0px;
+		top:-10px;
+		left:5px;
     -webkit-animation: pulsate 2s ease-out;
     -webkit-animation-iteration-count: infinite;
     opacity: 0.0
@@ -493,6 +549,9 @@ background-size: 3px 3px;*/
 .page-5{
   width: 100%;
   position: relative;
+	min-height: 650px;
+
+	overflow: hidden;
   /*background:url('../img/full.jpg') no-repeat center center ;
    -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -501,17 +560,10 @@ background-size: 3px 3px;*/
 }
 
 .page-5 .story_content{
-  padding:50px 100px;
+  padding:20px 100px;
 	position: relative;
-  height: 650px;
-}
-
-@media (max-width:480px) {
-	.page-5 .story_content{
-	  padding:30px 0px;
-	}
-
-
+  min-height: 650px;
+	overflow: hidden;
 }
 
 
@@ -526,15 +578,6 @@ background-size: 3px 3px;*/
     text-align: center;
 }
 
-@media (max-width:480px) {
-	.page-5 .story_content_image{
-		  width: 600px;
-	  	position: relative;
-		  top:0px;
-			left:-300px;
-			min-height: 500px;
-	}
-}
 
 .page-5 .story_content_image img{
 	width: 100%;
@@ -548,16 +591,10 @@ background-size: 3px 3px;*/
   /*color:white;*/
 }
 
-@media (max-width:480px) {
-	.page-5 .story_content_text{
-	  width: 100%;
-		left: 0px;
-		position: relative;
-	}
-}
 
 .page-5 .story_content_text h1{
   font-weight: bold;
+	margin: 0px;
 }
 
 .page-5 .story_content_text p{
@@ -574,11 +611,26 @@ background-size: 3px 3px;*/
 }
 
 
+
+.assembling_map{
+	overflow: hidden;
+	width: 600px;
+	height: 450px;
+	top:35px;
+	left:100px;
+	position: absolute;
+	background: url('../img/assembling_map.png') no-repeat center center ;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover;
+}
+
 .select_circle {
 	display: none;
 	position: absolute;
 	top:100px;
-	left: 300px;
+	left: 200px;
 	width: 350px;
 	height: 350px;
 	border-radius: 50%;
@@ -640,26 +692,17 @@ background-size: 3px 3px;*/
   padding:20px;
 }
 
-@media (max-width: 480px) {
-	.page-6 .story_content{
-	  padding:10px;
-	}
-}
 
 .page-6 .story_content_text{
   width: 40%;
 }
 
 
-@media (max-width: 480px) {
-	.page-6 .story_content_text{
-	  width: 100%;
-	}
-}
 
 
 .page-6 .story_content_text h1{
   font-weight: bold;
+	margin: 0px;
 }
 
 .page-6 .story_content_text p{
@@ -674,7 +717,7 @@ background-size: 3px 3px;*/
     position: absolute;
     top:0px;
     right: 0px;
-    height: 500px;
+    min-height: 500px;
     overflow: visible;
     text-align: center;
 }
@@ -685,15 +728,6 @@ background-size: 3px 3px;*/
   display: inline-block;
 }
 
-@media (max-width: 480px) {
-	.page-6 .story_content_image{
-	  width: 100%;
-		margin:50px 0px;
-	    position: relative;
-			height: 200px;
-	}
-
-}
 
 .page-7 {
   position: relative;
@@ -705,21 +739,26 @@ background-size: 3px 3px;*/
 
 .page-7 .story_content_campaignoptions_wrapper{
   width: 50%;
-  height: 600px;
+
   position:relative;
-  float: left;
+  float: right;
   text-align: center;
+
+	overflow: hidden;
 }
 
-@media (max-width:480px){
-	.page-7 .story_content_campaignoptions_wrapper{
-  width: 100%;
-	}
-}
+/*.page-7 .story_content_campaignoptions_wrapper{
+width: 100%;
+margin: 20px 0px;
+height: 1000px;
+background-color: red;
+}*/
 
 .page-7 .story_content_campaignoptions{
   position: relative;
   width: 100%;
+
+	overflow: hidden;
 }
 .page-7 .story_content_campaignoptions img{
 width: 100%;
@@ -728,33 +767,21 @@ width: 100%;
 .page-7  .story_content_campaignoptions_discription{
   padding: 0px 80px;
   line-height: 25px;
-}
 
-@media (max-width:480px){
-	.page-7  .story_content_campaignoptions_discription{
-	  padding: 0px 20px;
-	  line-height: 25px;
-	}
 }
 
 .page-7 .story_content_text{
   width: 50%;
   padding: 0px 50px;
   position:relative;
-  float: left;
+  float: right;
 }
 
-
-@media (max-width:480px){
-.page-7 .story_content_text{
-width: 100%;
-padding: 0px 0px;
-}
-}
 
 
 .page-7 .story_content_text h1{
   font-weight: bold;
+	margin: 0px;
 }
 
 .page-7 .story_content_text p{
@@ -786,20 +813,63 @@ padding: 0px 0px;
   display: none;
 }
 
+.front{
+	display: none;
+}
+
+.back{
+	display: none;
+}
+
+.story_content_campaignoptions_sides{
+	border: 1px solid #bdc3c7;
+	overflow: hidden;
+	border-radius: 5px;
+	top:-30px;
+	position: relative;
+
+}
+
+.story_content_campaignoptions_sides_button{
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	padding:tpx 5px;
+	cursor: pointer;
+}
+
+.active_side{
+	color:white;
+	background-color:#1abc9c;
+}
+
 
 .page-8{
   position: relative;
 
-	background:url('../img/full_2.jpg') no-repeat center center ;
+	background:url('../img/CampaignInitiation.jpg') no-repeat center center ;
 	 -webkit-background-size: cover;
 	 -moz-background-size: cover;
 	 -o-background-size: cover;
 	 background-size: cover;
 }
+
+.page-8 .middle_layer{
+	width: 100%;
+  height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: rgba(0,0,0,0); /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(left, rgba(0,0,0,0.8) , rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(right, rgba(0,0,0,0.8) , rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(right, rgba(0,0,0,0.8) , rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(to right, rgba(0,0,0,0.8) , rgba(0,0,0,0)); /* Standard syntax */
+}
 .page-8 .story_content{
   padding:20px;
 	color:white;
-	height: 600px;
+	min-height: 600px;
 }
 
 .page-8 .story_content_text{
@@ -809,6 +879,7 @@ padding: 0px 0px;
 
 .page-8 .story_content_text h1{
   font-weight: bold;
+	margin: 0px;
 }
 
 .page-8 .story_content_text p{
@@ -828,14 +899,17 @@ padding: 0px 0px;
 }
 
 
+
+
 .page-9{
   position: relative;
-	height: 800px;
+	height: 600px;
+	overflow: hidden;
 
 }
 .page-9 .story_content{
-  padding:0px 20px;
-		height: 800px;
+  padding:20px 20px;
+		height: 600px;
 }
 
 .page-8 .story_content_text{
@@ -847,6 +921,15 @@ padding: 0px 0px;
 
 .page-9 .story_content_text h1{
   font-weight: bold;
+
+		margin: 0px;
+}
+
+.page-9 .story_content_text{
+	padding: 0px;
+
+width: 30%;
+	float: right;
 }
 
 .page-9 .story_content_text p{
@@ -856,17 +939,20 @@ padding: 0px 0px;
 }
 
 .page-9 .story_content_image{
-  	width: 60%;
+  	width: 70%;
     position: relative;
-		float: left;
+		float: right;
+		left: 0%;
     height: 500px;
     overflow: visible;
     text-align: center;
 }
 
-/*.page-9 .story_content_image img{
-	width: 100%;
-}*/
+.page-9 .story_content_image img{
+	width: 120%;
+	position: relative;
+	left:-20%;
+}
 
 .map_layer{
 	top:50px;
@@ -914,7 +1000,8 @@ padding: 0px 0px;
 	overflow: hidden;
 	text-align: center;
 
-	background: url('https://s3.amazonaws.com/roadie-cdn/wp-other/backgrounds/mosaic.jpg') left top repeat;
+	background: url('../img/Collage_NoCopy.jpg') left top repeat;
+	background-size: 100% auto;
 background-attachment: fixed;
 
 	/*padding: 50px 0px;
@@ -942,5 +1029,268 @@ background-attachment: fixed;
 	padding: 50px 0px;
   width: 100%;
   height: 100%;
-  background: radial-gradient(ellipse at center,rgba(0,0,0,0) 0,rgba(0,0,0,1) 100%);
+  /*background: radial-gradient(ellipse at center,rgba(0,0,0,0) 0,rgba(0,0,0,1) 100%);*/
+}
+
+.half{
+	display: none;
+}
+
+
+@media (max-width: 768px) {
+.second_page{
+	overflow: hidden;
+}
+
+.second_page .header{
+  padding: 50px 0px;
+}
+
+
+.second_page .header p{
+  font-size: 23px;
+}
+
+.second_page .header h1{
+  font-size: 30px;
+	font-weight: lighter;
+	color: #629bb0;
+}
+
+.second_page .halfblack{
+	display: none;
+}
+
+.second_page .cars_image{
+  width: 100%;
+	position: relative;
+	z-index: 5;
+}
+
+.second_page .cars_image img{
+  width: 100%;
+
+}
+
+.second_page .content{
+	top:0px;
+	position: relative;
+  padding:20px 30px;
+  line-height: 25px;
+  color:#7d7d7d;
+	background-color: rgba(131,133,134,0.3);
+  font-size: 15px;
+}
+
+.third_page{
+
+  width: 100%;
+	min-height: 400px;
+		padding: 150px 30px;
+  position: relative;
+
+  /*background:url('../img/brands.jpg') repeat left top ;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   text-align: center;*/
+
+	 background: url('../img/brands.jpg') left top repeat;
+	 background-size: 80% auto;
+	 background-image: url('../img/brands.jpg');
+	 background-position-x: 0%;
+	 background-position-y: 0%;
+	 background-repeat-x: repeat;
+	 background-repeat-y: repeat;
+	 background-attachment: initial;
+	 background-origin: initial;
+	 background-clip: initial;
+	 background-color: initial;
+}
+
+.third_page .header{
+	width: 100%;
+}
+
+.third_page .header h1{
+  font-size: 30px;
+	color:#629bb0;
+	font-weight: lighter;
+}
+
+.page-4 .header{
+	margin: 50px 0px;
+}
+
+.page-4 .story_content{
+	text-align: center;
+}
+
+.page-4 .story_content_text{
+	text-align: left;
+	width: 100%;
+	min-height: 250px;
+}
+
+.page-4 .story_content_image{
+
+
+	left: calc(50% - 350px);
+		width: 700px;
+    position: relative;
+}
+
+
+.pin-1{
+	top:130px;
+	left:220px;
+}
+
+.pin-2{
+	top:180px;
+	left:250px;
+}
+
+.pin-3{
+	top:120px;
+	left:400px;
+}
+
+.page-5 .story_content{
+	width: 100%;
+	position: relative;
+	padding:20px 0px;
+	overflow: visible;
+	  min-height: 500px;
+
+}
+
+.page-5 .story_content_image{
+		width: 600px;
+		position: relative;
+		top:0px;
+
+    left: calc(0% - 300px);
+		min-height: 500px;
+}
+
+.assembling_pin{
+width: 10px;
+}
+
+.assembling_pin img{
+	width: 100%;
+}
+
+.page-5 .assembling_map{
+	overflow: hidden;
+	width: 450px;
+	height: 337px;
+	top:27px;
+	left:75px;
+	position: absolute;
+	background: url('../img/assembling_map.png') no-repeat center center ;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover;
+}
+
+.page-5 .story_content_text{
+	width: 100%;
+	left: -20px;
+	padding-right: 5px;
+	position: relative;
+}
+
+.page-6 .story_content_image{
+	width: 100%;
+	margin:50px 0px;
+		position: relative;
+		min-height: 100px;
+}
+.page-6 .story_content_text{
+	width: 100%;
+}
+.page-6 .story_content{
+	padding:20px;
+}
+
+.page-7 .story_content_text{
+width: 100%;
+padding: 0px 0px;
+}
+.page-7  .story_content_campaignoptions_discription{
+	padding: 0px 20px;
+	line-height: 25px;
+
+}
+
+.page-7 .story_content_campaignoptions_wrapper{
+  width: 100%;
+
+
+}
+
+.page-8{
+
+	background: url("../img/CampaignInitiation.jpg") no-repeat 60% ;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover;
+}
+
+
+.page-8 .story_content{
+  padding:20px;
+	color:white;
+	min-height: 600px;
+	overflow: hidden;
+
+}
+
+.page-8 .story_content_text{
+  width: 100%;
+}
+
+
+.page-8 .story_content_text p{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 200;
+}
+
+.page-9 .story_content_text{
+	padding: 0px;
+position: relative;
+width: 100%;
+
+}
+
+.page-9 .story_content_image{
+	margin-top: 20px;
+  width: 150%;
+    position: relative;
+		left:40%;
+    min-height: 500px;
+    overflow: visible;
+    text-align: center;
+}
+
+.dash_right_down_half{
+	display: none;
+}
+
+.half{
+	display: block;
+	height: 50%;
+}
+
+.story_content h1{
+	font-size: 25px;
+	padding-bottom: 10px;
+}
+
 }
