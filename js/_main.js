@@ -8,6 +8,34 @@ function mobile_menu(){
 
 }
 
+var ipadshown = false;
+
+var waypoint = new Waypoint({
+  element: document.getElementById('ipad_animation'),
+  handler: function(direction) {
+    if(!ipadshown){
+      ipadshown=true;
+      // $('.mobile_nav').
+      $('.pin_image').each(function(i, obj) {
+        if(i==2){
+            $(obj).transition({ y:250, opacity: 1 },i*500,function(){
+                $('.pin-1').find('.pin_info').addClass('active_pin_info');
+                $('.pin-1').find('.pin_image').addClass('active_pin');
+
+            });
+
+        }else{
+          $(obj).transition({ y:250, opacity: 1 },i*500);
+      }
+
+      });
+
+    //  alert();
+    }
+  },
+  offset: 200
+})
+
 function mobile_menu_off(){
 
     $('.mobile_nav').transition({ y:0, opacity: 0 },function(){
@@ -39,10 +67,26 @@ $("#double-label-slider")
 });
 
 
-$(function() {
-  $('.select_circle').show();
-  generatepin(300,135);
-});
+// $(function() {
+//   $('.select_circle').show();
+//   generatepin(300,135);
+// });
+
+var assemble_ipad_shown=false;
+
+var waypoint = new Waypoint({
+  element: document.getElementById('ipad_map_assembling'),
+  handler: function(direction) {
+    if(!assemble_ipad_shown){
+      assemble_ipad_shown=true;
+      $('.select_circle').show();
+      generatepin(300,135);
+
+    //  alert();
+    }
+  },
+  offset: 200
+})
 
   $('.ipad_map_assembling').click(function(e) {
     cleanpin();

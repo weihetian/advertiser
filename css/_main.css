@@ -465,6 +465,18 @@ background-size: 3px 3px;*/
 	z-index: 5;
 }
 
+.pin_image{
+		opacity: 0;
+		position: relative;
+		top:-250px;
+		transition: all 0.8s ease-in-out;
+}
+
+.pin_in{
+	top:0px;
+		opacity:1;
+}
+
 .pin_image img{
 	display: inline-block;
 
@@ -480,10 +492,14 @@ background-size: 3px 3px;*/
 	top:-5px;
 }
 
+
+
+
 .pin:hover .pin_info{
 	opacity: 1;
 	top:-120px;
 }
+
 
 .pin_info{
 	  transition: opacity 0.3s;
@@ -498,6 +514,7 @@ background-size: 3px 3px;*/
 
 }
 
+
 .pin_info_img{
 	width: 100%;
 	background-color: red;
@@ -506,6 +523,16 @@ background-size: 3px 3px;*/
 
 .pin_info p{
 	text-align: left;
+}
+
+.active_pin img{
+	top:-5px;
+}
+
+.active_pin_info{
+	opacity: 1;
+	top:-120px;
+
 }
 
 .pin-1{
